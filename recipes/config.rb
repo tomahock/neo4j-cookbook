@@ -24,7 +24,7 @@ template ::File.join(node['neo4j']['conf_dir'], 'neo4j.conf') do
   group node['neo4j']['group']
   mode '0644'
   backup node['neo4j']['chef_backup']
-  variables(:config => node['neo4j']['config']['neo4j.config'])
+  variables(:config => node['neo4j']['config']['neo4j.conf'])
   notifies :restart, 'service[neo4j]', :delayed if node['neo4j']['notify_restart']
 end
 
@@ -60,4 +60,4 @@ template ::File.join(node['neo4j']['conf_dir'], 'logging.properties') do
   notifies :restart, 'service[neo4j]', :delayed if node['neo4j']['notify_restart']
 end
 
-include_recipe 'neo4j-3::service'
+include_recipe 'neo4j::service'
