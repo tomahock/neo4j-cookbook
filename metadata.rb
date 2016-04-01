@@ -1,12 +1,12 @@
-name             'neo4j'
-maintainer       'Chris Zeeb'
-maintainer_email 'chris.zeeb@gmail.com'
+name             'neo4j-3'
+maintainer       'João Pina'
+maintainer_email 'me@tomahock.com'
 license          'Apache 2.0'
-description      'Installs/Configures neo4j'
+description      'Installs/Configures neo4j 3'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-issues_url       'https://github.com/czeeb/neo4j-cookbook/issues' if respond_to?(:issues_url)
-source_url       'https://github.com/czeeb/neo4j-cookbook' if respond_to?(:source_url)
-version          '1.0.5'
+issues_url       'https://github.com/tomahock/neo4j-3-cookbook/issues' if respond_to?(:issues_url)
+source_url       'https://github.com/tomahock/neo4j-3-cookbook' if respond_to?(:source_url)
+version          '0.0.1'
 
 supports 'amazon'
 supports 'centos', '>= 6.6'

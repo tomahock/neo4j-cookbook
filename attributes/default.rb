@@ -38,7 +38,7 @@ default['neo4j']['service_action'] = [:enable, :start]
 default['neo4j']['notify_restart'] = true
 
 # cookbook for configuration files template resources
-default['neo4j']['cookbook'] = 'neo4j'
+default['neo4j']['cookbook'] = 'neo4j-3'
 
 default['neo4j']['chef_backup'] = 5
 

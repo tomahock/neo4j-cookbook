@@ -17,5 +17,5 @@
 # limitations under the License.
 #
 
-include_recipe 'neo4j::install'
-include_recipe 'neo4j::config'
+include_recipe 'neo4j-3::install'
+include_recipe 'neo4j-3::config'

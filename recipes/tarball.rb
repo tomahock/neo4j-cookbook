@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-include_recipe 'neo4j::user'
+include_recipe 'neo4j-3::user'
 
 [node['neo4j']['parent_dir']
 ].each do |dir|

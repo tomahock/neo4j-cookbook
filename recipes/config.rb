@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: neo4j
+# Cookbook Name:: neo4j-3
 # Recipe:: config
 #
 # Copyright (c) 2015 Chris Zeeb <chris.zeeb@gmail.com>
@@ -17,14 +17,14 @@
 # limitations under the License.
 #
 
-# Template for /etc/neo4j/neo4j-server.properties
-template ::File.join(node['neo4j']['conf_dir'], 'neo4j-server.properties') do
-  source 'neo4j-server.properties.erb'
+# Template for /etc/neo4j/neo4j.conf
+template ::File.join(node['neo4j']['conf_dir'], 'neo4j.conf') do
+  source 'neo4j.conf.erb'
   owner node['neo4j']['user']
   group node['neo4j']['group']
   mode '0644'
   backup node['neo4j']['chef_backup']
-  variables(:config => node['neo4j']['config']['neo4j-server.properties'])
+  variables(:config => node['neo4j']['config']['neo4j.config'])
   notifies :restart, 'service[neo4j]', :delayed if node['neo4j']['notify_restart']
 end
 

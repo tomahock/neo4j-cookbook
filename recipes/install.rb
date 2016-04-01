@@ -21,10 +21,10 @@ raise "invalid value `#{node['neo4j']['install_method']}` for `node['neo4j']['in
 
 raise "invalid value `#{node['neo4j']['edition']}` for `node['neo4j']['edition']`, valid are `community enterprise`" unless %w(community enterprise).include?(node['neo4j']['edition'])
 
-include_recipe 'neo4j::java'
+include_recipe 'neo4j-3::java'
 
 # dir resources here
-include_recipe "neo4j::#{node['neo4j']['install_method']}"
+include_recipe "neo4j-3::#{node['neo4j']['install_method']}"
 
 [node['neo4j']['log_dir'],
  node['neo4j']['auth_dir'],
