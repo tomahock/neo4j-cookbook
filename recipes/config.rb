@@ -60,4 +60,4 @@ template ::File.join(node['neo4j']['conf_dir'], 'logging.properties') do
   notifies :restart, 'service[neo4j]', :delayed if node['neo4j']['notify_restart']
 end
 
-include_recipe 'neo4j::service'
+include_recipe 'neo4j-3::service'
