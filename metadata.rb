@@ -6,7 +6,7 @@ description      'Installs/Configures neo4j 3'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 issues_url       'https://github.com/tomahock/neo4j-3-cookbook/issues' if respond_to?(:issues_url)
 source_url       'https://github.com/tomahock/neo4j-3-cookbook' if respond_to?(:source_url)
-version          '0.0.6'
+version          '0.0.7'
 
 supports 'amazon'
 supports 'centos', '>= 6.6'

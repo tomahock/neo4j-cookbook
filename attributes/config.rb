@@ -18,7 +18,7 @@ default['neo4j']['config']['neo4j-wrapper.conf']['wrapper.user'] = 'neo4j'
 # neo4j.conf
 default['neo4j']['config']['neo4j.conf']['dbms.directories.data'] = "/var/lib/neo4j/data"
 default['neo4j']['config']['neo4j.conf']['dbms.active_database'] = "graph.db"
-default['neo4j']['config']['neo4j.conf']['org.neo4j.server.database.mode'] = "SINGLE"
+#default['neo4j']['config']['neo4j.conf']['org.neo4j.server.database.mode'] = "SINGLE"
 default['neo4j']['config']['neo4j.conf']['org.neo4j.server.webserver.address'] = node['ipaddress']
 default['neo4j']['config']['neo4j.conf']['dbms.security.auth_enabled'] = true
 default['neo4j']['config']['neo4j.conf']['dbms.connector.0.enabled'] = true
