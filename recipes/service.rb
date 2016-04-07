@@ -24,7 +24,7 @@ service_provider = case node['platform_family']
                      end
                    end
 
-service 'neo4j' do
+service 'neo4j-3' do
   service_name 'neo4j-service' if node['platform_family'] == 'debian'
   action [:enable, :start]
   supports :restart => true
